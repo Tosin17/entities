@@ -17,4 +17,4 @@ Dynamically generate form controls in React
 
 - Improve date-time conversion
 - Increase code coverage (Add more tests)
-- Replace the `any` types with interfaces
+- Improve TS type checking by replacing the `any` types with interfaces
