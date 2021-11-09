@@ -12,3 +12,9 @@ Dynamically generate form controls in React
 # To Test
 
 - npm run test -- a
+
+# Todo Improvements
+
+- Improve date-time conversion
+- Increase code coverage (Add more tests)
+- Replace the `any` types with interfaces
