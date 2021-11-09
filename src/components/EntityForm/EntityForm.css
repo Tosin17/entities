@@ -2,3 +2,9 @@
   width: 50%;
   margin: 70px auto;
 }
+
+@media screen and (min-width: 1378px) {
+  .EntityForm {
+    width: 40%;
+  }
+}
