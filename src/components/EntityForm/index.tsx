@@ -29,7 +29,11 @@ export function EntityForm() {
   }, []);
 
   return (
-    <Form className="EntityForm" onSubmit={handleSubmit}>
+    <Form
+      className="EntityForm"
+      onSubmit={handleSubmit}
+      data-testid="entityForm"
+    >
       <FormHeader label={entityMeta.label} name={entityMeta.name} />
       <FormCtrls fields={entityMeta.field ?? []} />
       <Button as="input" type="submit" value="Save" />{" "}
