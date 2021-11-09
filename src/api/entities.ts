@@ -7,13 +7,15 @@ export function getEntityMeta() {
   // Map entity data to meta and fake async op with `Promise`
   return Promise.resolve({
     ...entityMeta,
-    field: field.map((f) => ({
-      ...f,
-      value: (entityData as any)[f.name] ?? null,
-    })),
+    field: field
+      .filter((f) => !f.system)
+      .map((f) => ({
+        ...f,
+        value: (entityData as any)[f.name] ?? null,
+      })),
   });
 }
 
 export function getEntityData() {
-  return Promise.resolve(entityData);
+  return entityData;
 }
